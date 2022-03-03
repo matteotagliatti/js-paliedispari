@@ -3,7 +3,7 @@
 const userStringOutput = document.getElementById("output-user-string");
 const palindromegOutput = document.getElementById("output-palindrome");
 
-const userString = prompt("enter a word").toLocaleLowerCase();
+const userString = prompt("enter a word").toLowerCase();
 
 userStringOutput.innerHTML = userString;
 palindromegOutput.innerHTML = checkPalindrome(userString);
@@ -33,11 +33,11 @@ const outputComputerNumber = document.getElementById("output-computernumber");
 const outputSum = document.getElementById("output-sum");
 const whoWonOutput = document.getElementById("output-won");
 
-let inputSelect = prompt("even or odd?").toLocaleLowerCase();
+let inputSelect = prompt("even or odd?").toLowerCase();
 
 /* Check if inputSelect is different from Odd or Even */
 while (inputSelect !== "odd" && inputSelect !== "even") {
-  inputSelect = prompt("even or odd?").toLocaleLowerCase();
+  inputSelect = prompt("even or odd?").toLowerCase();
 }
 
 let userNumber = parseInt(prompt("enter a number beetween 1 and 5"));
