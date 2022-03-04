@@ -10,13 +10,11 @@ palindromegOutput.innerHTML = checkPalindrome(userString);
 
 /**
  * Check if user string is palindrome.
- * @param {*} string // use string
+ * @param {*} string
  * @returns
  */
 function checkPalindrome(string) {
-  const array = string.split(""); // Convert string to array
-  const reverseArray = array.reverse(); // Reverse the array
-  const reverseString = reverseArray.join(""); // Convert array to string
+  const reverseString = string.split("").reverse().join(""); // Convert string to array > Reverse the array > Convert array to string
 
   if (string == reverseString) {
     return true;
