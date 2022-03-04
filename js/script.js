@@ -31,14 +31,14 @@ const outputComputerNumber = document.getElementById("output-computernumber");
 const outputSum = document.getElementById("output-sum");
 const whoWonOutput = document.getElementById("output-won");
 
-let inputSelect = prompt("even or odd?").toLowerCase();
+let inputSelect = "";
 
 /* Check if inputSelect is different from Odd or Even */
 while (inputSelect !== "odd" && inputSelect !== "even") {
   inputSelect = prompt("even or odd?").toLowerCase();
 }
 
-let userNumber = parseInt(prompt("enter a number beetween 1 and 5"));
+let userNumber = "";
 const computerNumber = randomNumber();
 
 /* Check if userNumber is a number and beetween 1 and 5 */
